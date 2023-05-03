@@ -122,6 +122,25 @@ summary{
 }
 
 
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
 
     </style>
   </head>
@@ -252,7 +271,7 @@ summary{
           <td>پکیج کاربردی ۱: بیکینی،خط باسن و دو زیر بغل </td>
         </tr>
         <tr>
-          <td>۳۴۰</td>
+          <td><span class="strikethrough">۴۵۹  </span>۳۴۰</td>
           <td>پکیج کاربردی ۲:بیکینی،خط باسن و دو زیر بغل، دو ساعد، دو ساق پا</td>
         </tr>
    
@@ -368,30 +387,37 @@ summary{
     <summary>تعرفه بوتاکس - نوروتوکسین</summary>
     <table>
       <tr>
-        <th>مبلغ</th>
+        <th>دیستون</th>
+        <th>مصپورت</th>
         <th>محل</th>
       </tr>
       <tr>
+        <td>۱۵۰</td>
         <td>۲۰۰</td>
         <td>خطوط پنجه کلاغی دور چشم</td>
       </tr>
       <tr>
+        <td>۲۷۰</td>
         <td>۳۵۰</td>
         <td>لیفت ابرو و پیشونی و خط اخم</td>
       </tr>
       <tr>
+        <td>۱۰۰</td>
         <td>۱۵۰</td>
         <td>خطوط بانی لاین روی بینی</td>
       </tr>
       <tr>
+        <td>۱۰۰</td>
         <td>۱۵۰</td>
         <td>رفع خنده لثه ای</td>
       </tr>
       <tr>
+        <td>۴۹۰</td>
         <td>۵۹۰</td>
         <td>صورت کامل</td>
       </tr>
       <tr>
+        <td>۵۵۰</td>
         <td>۶۹۰</td>
         <td>رفع تعریق زیر بغل، کف دست ها و کف پاها</td>
       </tr>
@@ -457,7 +483,7 @@ summary{
         <th>پکیج</th>
       </tr>
       <tr>
-        <td>برند بایومارین و غیره - خدمات ۷ مرحله ای با دستگاه</td>
+        <td>خدمات این پکیج در سایر پکیج ها به صورت رایگان انجام می‌شود</td>
         <td>۲۸۰</td>
         <td>کلاسیک</td>
       </tr>
