@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@600&display=swap");
+
+html,
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #FFFDAF;
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+  width: 100%;
+  /* padding: 0.5rem 0; */
+  border-top: 1px solid #6AAA5A;
+  position: relative;
+  cursor: pointer;
+  font-weight: 300;
+  list-style: none;
+  /* padding: 2rem; */
+  /* margin: 3rem auto; */
+  /* background: #6AAA5A; */
+  border-radius: 1rem;
+  box-shadow: 0px 0px   34px -8px rgba(0, 0, 0, 0.55);
+  /* border: 1px solid #222; */
+}
+
+.accordion {
+  font-family: inherit;
+  background-color: #FFFDAF;
+  color: #6AAA5A;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  border: 1px solid #6AAA5A;
+  text-align: right;
+  outline: none;
+  font-size: 1.5rem;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.75);
+}
+
+.accordion:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.accordion:nth-last-child(1) {
+  border-radius: 0 0 1rem 1rem;
+}
+
+.accordion:nth-last-child(1):hover {
+  background: crimson;
+}
+
+.active,
+.accordion:hover {
+  background-color: #6AAA5A;
+  color:#FFFDAF;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #6AAA5A;
+  font-weight: bold;
+  float: left;
+}
+
+.active:after {
+  content: "\2212";
+  color: #FFFDAF;
+}
+
+.accordion-content {
+  padding: 0 1rem;
+  color: #6AAA5A;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-content ul {
+  list-style-type: circle;
+  margin: 1rem 0;
+  padding: 0.2rem;
+}
+
+.accordion-content ul li {
+  padding: 0.2rem 0;
+}
+
+
+/* Added by me */
+
+
+table {
+  margin: auto;
+  margin-top: 2%;
+  border-collapse: collapse;
+  background-color: #6AAA5A;
+  /* box-shadow: 0 15px 10px #6AAA5A; */
+  margin-bottom: 5%;
+  font-size: 1rem;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+  /* border: 1px solid #ddd; */
+  
+}
+th {
+  background-color: #FFFDAF;
+  color: #6AAA5A;
+}
+tr:nth-child(even) {
+  background-color: #FFFDAF;
+  color: #6AAA5A;
+}
+tr:nth-child(odd) {
+  background-color: #6AAA5A;
+  color: #FFFDAF;
+}
+.lefted{
+    text-indent: -30%;
+}
+
+.strikethrough {
+  padding: 5px;
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+h1 {
+  text-align: center;
+  color: #6AAA5A;
+  margin: 20px 0;
+}
